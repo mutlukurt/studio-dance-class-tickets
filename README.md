@@ -7,6 +7,13 @@ A modern, responsive website for a dance studio featuring class schedules, ticke
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.17-38B2AC?logo=tailwind-css)
 
+## 🌐 Live Demo
+
+**[View Live Demo →](https://studio-dance-class-tickets.vercel.app/)**
+
+Experience the full website with all interactive features, animations, and responsive design.
+
+
 ## ✨ Features
 
 ### 🎯 Core Sections
