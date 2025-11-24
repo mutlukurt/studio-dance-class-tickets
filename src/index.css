@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-neon-green: #ccff00;
+  --color-neon-red: #ff0033;
+  --color-dark-bg: #0a0a0a;
+  --color-card-bg: #1a1a1a;
+
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --animate-glitch: glitch 1s linear infinite;
+
+  @keyframes glitch {
+
+    2%,
+    64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
+  }
+}
+
+@utility text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+
+@utility text-stroke-green {
+  -webkit-text-stroke: 1px #ccff00;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display uppercase;
+  }
+}
